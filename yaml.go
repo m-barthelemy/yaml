@@ -411,8 +411,10 @@ type Node struct {
 
 	// Line and Column hold the node position in the decoded YAML text.
 	// These fields are not respected when encoding the node.
-	Line   int
-	Column int
+	Line      int
+	Column    int
+	LineEnd   int
+	ColumnEnd int
 }
 
 // IsZero returns whether the node has all of its fields unset.
